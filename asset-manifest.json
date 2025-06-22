@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/streamlit-portfolio/static/css/main.3f120fbb.css",
+    "main.js": "/streamlit-portfolio/static/js/main.f2617a1f.js",
+    "static/js/453.1bd363dc.chunk.js": "/streamlit-portfolio/static/js/453.1bd363dc.chunk.js",
+    "index.html": "/streamlit-portfolio/index.html",
+    "main.3f120fbb.css.map": "/streamlit-portfolio/static/css/main.3f120fbb.css.map",
+    "main.f2617a1f.js.map": "/streamlit-portfolio/static/js/main.f2617a1f.js.map",
+    "453.1bd363dc.chunk.js.map": "/streamlit-portfolio/static/js/453.1bd363dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f120fbb.css",
+    "static/js/main.f2617a1f.js"
+  ]
+}

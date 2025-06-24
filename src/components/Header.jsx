@@ -16,28 +16,41 @@ const Header = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <AppBar
       position="sticky"
-      elevation={0} // ❌ removes shadow
+      elevation={0}
       sx={{
         backgroundColor: "#f8f4f4",
         color: "#000",
         zIndex: 1100,
-        borderBottom: "1px solid #e0e0e0", // ✅ subtle border
+        borderBottom: "1px solid #e0e0e0",
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        {/* Left-aligned icon + title */}
+        {/* Left-aligned icon + button */}
         <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1, pl: 2 }}>
-          <WebIcon sx={{ mr: 1 }} />
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ fontWeight: "bold", textTransform: "capitalize" }}
+          <Button
+            onClick={scrollToTop}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              color: "#000",
+              fontWeight: "bold",
+              textTransform: "capitalize",
+              p: 0,
+              minWidth: "auto",
+            }}
           >
-            Streamlit Folio
-          </Typography>
+            <WebIcon sx={{ mr: 1 }} />
+            <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+              Streamlit Folio
+            </Typography>
+          </Button>
         </Box>
 
         {/* Right-aligned links */}
@@ -47,7 +60,7 @@ const Header = () => {
             sx={{
               color: "#87878e",
               fontWeight: "bold",
-              textTransform: "capitalize",
+              textTransform: "capitalize"              
             }}
           >
             Projects

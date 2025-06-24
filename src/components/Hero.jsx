@@ -28,14 +28,37 @@ const Hero = () => {
               <Typography variant="h4" color="#45097c" gutterBottom>
                 Data Analyst
               </Typography>
-              <Typography variant="body1" sx={{ mt: 2 }}>
-                Experienced data analyst with a focus on dashboard development,
-                data automation, and interactive Streamlit apps for sentiment
-                analysis and EDA. Skilled at turning complex data into actionable
-                insights to support decision-making.
+              <Typography variant="body1" sx={{ mt: 3, fontSize: "1.1rem", color:"text.secondary" }}>
+                Experienced data analyst with a focus on dashboard development, data automation, and interactive Streamlit apps for sentiment
+                analysis and EDA. Skilled at turning complex data into actionable insights to support decision-making.
               </Typography>
-              <Box mt={3}>
-                <Button variant="contained" href="#projects">
+              <Box mt={5}>
+                <Button 
+                  variant="contained" size="medium"
+                  sx={{
+                    color: "#ffffff",
+                    backgroundColor: "#45097c",
+                    textTransform: "capitalize",
+                    px: 4,
+                    py: 1,
+                    borderRadius: 2,
+                    fontSize: "16px",
+                    boxShadow: "none"
+                  }}
+                  onClick={() => {
+                    const element = document.getElementById("projects");
+                    const offset = 80; // Adjust this based on your header height
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = element.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                    });
+                }}
+                >
                   View My Projects
                 </Button>
               </Box>
@@ -44,11 +67,11 @@ const Hero = () => {
 
           {/* Right: Image */}
           <Grid item xs={12} md={5}>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" sx={{ pl: 4 }}>
               <Avatar
                 alt="Bhavesh Agarwal"
-                src={bhaveshImage} // Ensure image exists here
-                sx={{ width: 250, height: 250 }}
+                src={bhaveshImage}
+                sx={{ width: 300, height: 300, boxShadow: 10 }}
               />
             </Box>
           </Grid>

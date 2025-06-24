@@ -53,7 +53,7 @@ const Projects = () => (
       flexWrap="wrap"
       gap={4}
       justifyContent="center"
-      mt={3}
+      mt={8}
       
     >
       {projects.map((proj, idx) => (

@@ -7,6 +7,7 @@ import {
   Grid,
   Avatar,
 } from "@mui/material";
+import bhaveshImage from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
@@ -46,7 +47,7 @@ const Hero = () => {
             <Box display="flex" justifyContent="center">
               <Avatar
                 alt="Bhavesh Agarwal"
-                src="/assets/profile.jpeg" // Ensure image exists here
+                src={bhaveshImage} // Ensure image exists here
                 sx={{ width: 250, height: 250 }}
               />
             </Box>

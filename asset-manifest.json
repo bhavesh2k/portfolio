@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/streamlit-portfolio/static/css/main.11634268.css",
-    "main.js": "/streamlit-portfolio/static/js/main.ca5ef8d4.js",
+    "main.js": "/streamlit-portfolio/static/js/main.b977461d.js",
+    "static/media/profile.jpeg": "/streamlit-portfolio/static/media/profile.9df7c63e9a225611e1c7.jpeg",
     "static/media/poppins-devanagari-400-normal.woff": "/streamlit-portfolio/static/media/poppins-devanagari-400-normal.421fe9869ff4b58e2d7b.woff",
     "static/media/poppins-devanagari-400-normal.woff2": "/streamlit-portfolio/static/media/poppins-devanagari-400-normal.d2ee5e6ea17bffe3bf58.woff2",
     "static/media/poppins-latin-400-normal.woff": "/streamlit-portfolio/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
@@ -10,10 +11,10 @@
     "static/media/poppins-latin-ext-400-normal.woff2": "/streamlit-portfolio/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
     "index.html": "/streamlit-portfolio/index.html",
     "main.11634268.css.map": "/streamlit-portfolio/static/css/main.11634268.css.map",
-    "main.ca5ef8d4.js.map": "/streamlit-portfolio/static/js/main.ca5ef8d4.js.map"
+    "main.b977461d.js.map": "/streamlit-portfolio/static/js/main.b977461d.js.map"
   },
   "entrypoints": [
     "static/css/main.11634268.css",
-    "static/js/main.ca5ef8d4.js"
+    "static/js/main.b977461d.js"
   ]
 }

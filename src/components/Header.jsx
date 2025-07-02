@@ -57,7 +57,7 @@ const Header = () => {
           >
             <WebIcon sx={{ mr: 1 }} />
             <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
-              Streamlit Folio
+              Project Portfolio
             </Typography>
           </Button>
         </Box>

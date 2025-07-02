@@ -13,8 +13,7 @@ const App = () => {
       <div
         style={{
           backgroundColor: "#f8f4f4",
-          minHeight: "100vh",
-          paddingBottom: "2rem",
+          minHeight: "100vh"
         }}
       >
         <Header />

@@ -10,7 +10,16 @@ const Header = () => {
   const scrollToProjects = () => {
     const el = document.getElementById("projects");
     if (el) {
-      const yOffset = -80; // adjust based on actual header height
+      const yOffset = -80;
+      const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
+  const scrollToContact = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      const yOffset = -80;
       const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
@@ -56,14 +65,34 @@ const Header = () => {
         {/* Right-aligned links */}
         <Box sx={{ display: "flex", gap: 2, pr: 80 }}>
           <Button
+            onClick={scrollToTop}
+            sx={{
+              color: "#87878e",
+              fontWeight: "bold",
+              textTransform: "capitalize",
+            }}
+          >
+            Home
+          </Button>
+          <Button
             onClick={scrollToProjects}
             sx={{
               color: "#87878e",
               fontWeight: "bold",
-              textTransform: "capitalize"              
+              textTransform: "capitalize",
             }}
           >
             Projects
+          </Button>
+          <Button
+            onClick={scrollToContact}
+            sx={{
+              color: "#87878e",
+              fontWeight: "bold",
+              textTransform: "capitalize",
+            }}
+          >
+            Contact
           </Button>
           <Button
             onClick={() =>
@@ -77,6 +106,7 @@ const Header = () => {
           >
             LinkedIn
           </Button>
+          
         </Box>
       </Toolbar>
     </AppBar>

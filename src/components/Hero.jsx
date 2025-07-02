@@ -67,7 +67,7 @@ const Hero = () => {
 
           {/* Right: Image */}
           <Grid item xs={12} md={5}>
-            <Box display="flex" justifyContent="center" sx={{ pl: 4 }}>
+            <Box display="flex" justifyContent="center" sx={{ pl: 6 }}>
               <Avatar
                 alt="Bhavesh Agarwal"
                 src={bhaveshImage}

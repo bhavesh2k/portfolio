@@ -3,7 +3,6 @@ import { Container, Typography, Link, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-
 const StreamlitEmbed = () => (
   <Container id="contact"
     maxWidth={false}
@@ -26,15 +25,15 @@ const StreamlitEmbed = () => (
     </Typography>
 
     <Box sx={{ maxWidth: 800, margin: "0 auto" }}>
-      <Typography variant="body1" gutterBottom sx={{ fontSize: "1.1rem" }}>
+      <Typography variant="body1" gutterBottom sx={{ fontSize: "1rem" }}>
         📧 Email:{" "}
         <Link href="mailto:bhavesh2k@gmail.com" underline="hover" sx={{ color: "#4fc3f7" }}>
           bhavesh2k@gmail.com
         </Link>
       </Typography>
 
-      <Typography variant="body1" gutterBottom sx={{ fontSize: "1.1rem", display: "flex", alignItems: "center", gap: 1 }}>
-        <LinkedInIcon sx={{ color: "#4fc3f7" }} />
+      <Typography variant="body1" gutterBottom sx={{ fontSize: "1rem", display: "flex", alignItems: "center", gap: 1 }}>
+        <LinkedInIcon sx={{ fontSize: 20, color: "#4fc3f7" }} />
         <span>LinkedIn:</span>{" "}
         <Link
           href="https://www.linkedin.com/in/bhaveshagl"
@@ -48,7 +47,7 @@ const StreamlitEmbed = () => (
       </Typography>
 
 
-      <Typography variant="body1" gutterBottom sx={{ fontSize: "1.1rem", display: "flex", alignItems: "center", gap: 1 }}>
+      <Typography variant="body1" gutterBottom sx={{ fontSize: "1rem", display: "flex", alignItems: "center", gap: 1 }}>
         <GitHubIcon sx={{ fontSize: 20, color: "#f0f0f0" }} />
         <span>GitHub:</span>{" "}
         <Link

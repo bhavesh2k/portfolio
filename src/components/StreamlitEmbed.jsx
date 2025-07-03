@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Link, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
 const StreamlitEmbed = () => (
   <Container id="contact"
@@ -25,9 +26,16 @@ const StreamlitEmbed = () => (
     </Typography>
 
     <Box sx={{ maxWidth: 800, margin: "0 auto" }}>
-      <Typography variant="body1" gutterBottom sx={{ fontSize: "1rem" }}>
-        📧 Email:{" "}
-        <Link href="mailto:bhavesh2k@gmail.com" underline="hover" sx={{ color: "#4fc3f7" }}>
+      <Typography variant="body1" gutterBottom sx={{ fontSize: "1rem", display: "flex", alignItems: "center", gap: 1 }}>
+        <EmailIcon sx={{ fontSize: 20, color: "#f0f0f07" }} />
+        <span>Email:</span>{" "}
+        <Link 
+          href="mailto:bhavesh2k@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          underline="hover"
+          sx={{ color: "#4fc3f7", ml: "1" }}
+        >
           bhavesh2k@gmail.com
         </Link>
       </Typography>

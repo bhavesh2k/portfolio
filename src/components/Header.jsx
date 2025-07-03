@@ -63,7 +63,7 @@ const Header = () => {
         </Box>
 
         {/* Right-aligned links */}
-        <Box sx={{ display: "flex", gap: 2, pr: 57}}>
+        <Box sx={{ display: "flex", gap: 2, pr: 55}}>
           <Button
             onClick={scrollToTop}
             sx={{

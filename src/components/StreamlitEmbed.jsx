@@ -30,13 +30,13 @@ const StreamlitEmbed = () => (
         <EmailIcon sx={{ fontSize: 20, color: "#f0f0f07" }} />
         <span>Email:</span>{" "}
         <Link 
-          href="mailto:bhavesh2k@gmail.com"
+          href="mailto:bhavesh.agarwal2k@gmail.com"
           target="_blank"
           rel="noreferrer"
           underline="hover"
           sx={{ color: "#4fc3f7", ml: "1" }}
         >
-          bhavesh2k@gmail.com
+          bhavesh.agarwal2k@gmail.com
         </Link>
       </Typography>
 

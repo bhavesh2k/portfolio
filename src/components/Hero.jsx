@@ -29,7 +29,7 @@ const Hero = () => {
                 Data Analyst
               </Typography>
               <Typography variant="body1" sx={{ mt: 3, fontSize: "1.1rem", color:"text.secondary" }}>
-                Experienced data analyst with a focus on dashboard development, data automation, and interactive Streamlit apps for sentiment
+                Experienced data analyst with a focus on dashboard development, data automation, and interactive web apps for sentiment
                 analysis and EDA. Skilled at turning complex data into actionable insights to support decision-making.
               </Typography>
               <Box mt={5}>
